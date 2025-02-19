@@ -4,7 +4,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon ts-node src/index.ts"
+    "dev": "ts-node src/index.ts",
+    "start": "node dist/app.js",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +26,11 @@
     "typescript-eslint": "^8.22.0"
   },
   "dependencies": {
+    "@huggingface/inference": "^2.8.1",
+    "@huggingface/transformers": "^3.3.2",
+    "@langchain/community": "^0.3.28",
+    "@langchain/google-genai": "^0.1.8",
+    "@langchain/openai": "^0.4.2",
     "dotenv": "^16.4.7",
     "faiss-node": "^0.5.1",
     "langchain": "^0.3.15",
